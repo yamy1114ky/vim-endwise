@@ -120,7 +120,7 @@ if !exists('g:endwise_no_mappings')
     exe "imap <silent> <CR> ".maparg('<CR>', 'i')."<Plug>DiscretionaryEnd"
   else
     imap <script> <C-X><CR> <CR><SID>AlwaysEnd
-    imap <CR> <CR><Plug>DiscretionaryEnd
+"    imap <CR> <CR><Plug>DiscretionaryEnd
   endif
   autocmd endwise CmdwinEnter * call s:teardownMappings()
 endif
